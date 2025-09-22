@@ -1,0 +1,30 @@
+test_case = int(input())
+T = []
+
+for i in range(test_case):
+    A = input().split()
+    B = []
+    B.append(int(A[0]))
+    B.append(int(A[1]))
+    B.append(int(A[2]))
+    T.append(B)
+
+for i in range(test_case):
+    H = T[i][0]
+    W = T[i][1]
+    N = T[i][2]
+
+    Y = N % H
+    if Y == 0:
+        Y = H
+    Y = str(Y)
+
+    X = (N // H) + 1
+    X = str(X)
+
+    if len(X) < 2:
+        X = '0' + X
+
+    result = Y + X
+    print(result)
+    
