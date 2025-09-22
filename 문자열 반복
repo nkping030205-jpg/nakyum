@@ -1,0 +1,14 @@
+T = int(input())
+
+for i in range(T):
+    A = input().split()
+    R = int(A[0])
+    L = str(A[1])
+
+E = len(L)
+P = str()
+
+for o in range(0, E):
+    P += L[o]*R
+
+print(P)
