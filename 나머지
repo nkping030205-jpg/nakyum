@@ -1,0 +1,22 @@
+A=[]
+
+for i in range(0,10):
+    B = int(input())
+    A.append(B)
+
+C = []
+for i in range(0,10):
+    D = A[i]%42
+    C.append(D)
+
+print(C)
+
+for n in range(0,10):
+    for e in range(0,10):
+        if C[n] == C[e]:
+            n != e
+            del C[n]
+        else:
+            print(len(C))
+
+print(len(C))
